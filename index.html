@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      body {
+        font-family: Outfit;
+        text-align: center;
+      }
+      .container {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(212, 45%, 89%);
+      }
+      .row {
+        display: flex;
+        width: fit-content;
+        max-width: 20%;
+        /* min-width: 40%; */
+        padding: 1em;
+        flex-direction: column;
+        /* box-shadow: 10px 5px 5px grey; */
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 1em;
+      }
+      .qr-code-image {
+        display: inherit;
+        /* padding: 1em; */
+        width: 100%;
+        margin-inline: auto;
+        border-radius: 1em;
+      }
+      .text {
+        /* text-align: center; */
+        padding: 1em;
+        min-width: 15%;
+        font-weight: 400;
+        color: hsl(220, 15%, 55%);
+      }
+      .caption {
+        padding: 1em;
+        font-weight: 700;
+        color: hsl(218, 44%, 22%);
+      }
+      @media (min-width: 375px) and (max-width: 765px) {
+        .container {
+          height: 100vh;
+        }
+        .row {
+          margin: 10px;
+          max-width: 100%;
+        }
+      }
+      @media (min-width: 766px) and (max-width: 1023px) {
+        .container {
+          height: 100vh;
+        }
+        .row {
+          margin: 10px;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <img src="./images/image-qr-code.png" alt="" class="qr-code-image" />
+        <h3 class="caption">
+          Improve your front-end skills by building projects
+        </h3>
+        <p class="text">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
