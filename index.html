@@ -115,4 +115,14 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
   </body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker
+          .register('./sw.js')
+          .then((reg) => console.log('service worker registered'))
+          .catch((error) => console.log(`service worker error ${error}`));
+      });
+    }
+  </script>
 </html>
